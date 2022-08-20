@@ -1,35 +1,61 @@
-/*style*/
-/* CSS CODE */
-/*HEADING */
-h1{
-    color: red;
-    font-size: 45px;
-}
-/* 3 by 3 grid */
-#b1,#b2,#b3,#b4,#b5,#b6,#b7,#b8,#b9{
-    width: 80px;
-    height: 52px;
-    margin: auto;
-    border: 1px solid gray;
-    border-radius: 6px;
-    font-size: 30px;
-    text-align: center;
-}
-/* reset button */
-#but{
-    box-sizing: border-box;
-    width: 95px;
-    height: 55px;
-    border: 1 px solid blueviolet;
-    margin: auto;
-    border-radius: 6px;
+* {
+    padding: 0;
+    margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: blueviolet;
+ 
+}
+.background{
+    color: plum;
+    height:100vh ;
+    padding-top: 1px;
+
+}
+.title{
+   color: black; 
+   text-align: center;
+   font-size: 40px;
+   margin-top: 15%;
+
+}
+.display{
     color: whitesmoke;
-    font-size: 25px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.hide{
+    display: none;
+}
+.container{
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33%  33%  33%;
+    max-width: 330px;
+    
+}
+.title{
+    border: 1px wheat;
+    min-width: 100px;
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: optional;
+    font-size: 50px;
     cursor: pointer;
 }
-/*main container */
-#main{
-    text-align: center;
+.playerX{
+    color: red;
+}
+.playerO{
+    color: blue;
+}
+.controls{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1em;
 }
